@@ -1,0 +1,198 @@
+header {
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: center;
+      background: url('http://www.wallm.com/images/2012/12/3dfictioncom-fractal-26-with-background-codes-ipad-iphone.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    a:hover{
+      color:red;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 100px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,50,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+
+body {
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    /*width: 800px;*/
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+}
+
+.login-area {
+    font-size: 16px;
+    color: gray;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login-link {
+    color: gray;
+    text-decoration: none;
+}
+
+/*.login-link:visited {
+    color: gray;
+}*/
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.error {
+
+    
+    color: red;
+    font-size: 20px;
+    padding: 2px;
+    
+}
+
+label {
+  display: block;
+  font-size: 20px;
+}
+
+label + label {
+    margin-top: 20px;
+}
+
+input[type=text] {
+    width: 400px;
+    font-size: 20px;
+    padding: 2px;
+    font-family: monospace;
+}
+input[type=password] {
+    width: 400px;
+    font-size: 20px;
+    padding: 2px;
+    font-family: monospace;
+}
+
+textarea {
+  width: 500px;
+  height: 400px;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+input[type=submit] {
+  font-size: 24px;
+}
+
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.post + .post {
+    margin-top: 15px;
+}
+
+.post-heading {
+    position: relative;
+    border-bottom: 3px solid #666;
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.post-date {
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    color: #999;
+
+}
+
+.post-content {
+    width: 600px;
+    padding: 20px;
+    /*margin: 0 auto;*/
+    margin-top: 5px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
+    
+    
+
+}
+.blog{
+    /*border:5px solid black;*/
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top:40px;
+}
+
+}
+.perma-title{
+    border:2px solid black;
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+}
+.perma-content{
+    text-align: center;
+    margin-top: 5px;
+}
+.return-link{
+
+    
+    color:black;
+}
+.test{
+    width:500px;
+}
+
