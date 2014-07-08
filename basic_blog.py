@@ -29,7 +29,7 @@ def valid_em(email):
 
 #hashing functions **************************************************
 def hash_str(s):
-	return hashlib.md5(s).hexdigest() #should change this to HMAC for security
+	return hashlib.hmac(s).hexdigest() #should change this to HMAC for security
 
 def make_secure_val(s):
 	return "%s|%s" % (s, hash_str(s))
