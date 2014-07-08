@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>BRANDON'S BLOG</title>
+		<link type="text/css" rel="stylesheet" href="/static/main.css" />
+	</head>
+	<body>
+
+		<div class='blog'>	
+			<h1 class="main-title">Brandon's Blog</h1>
+			<p>Say hello to the coolest guy alive!</p>
+			<form method='post'>
+				<label>
+					<div>Subject</div>
+					<input type='text' name='subject' value={{title}}>
+				</label>
+				<label>
+					<div>Content</div>
+					<textarea name='content'>{{content}}</textarea>
+				</label>
+				<div>
+					<input type='submit'>
+				</div>
+				<div>{{error}}</div>	
+			</form>
+
+			<div>
+				<p><a class='return-link' href='/blog'>Back to Blog</a></p>
+			</div>
+		</div>
+
+
+		<div class="login-area">
+			{% if username %}
+			{{user.name}} (<a class="login-link" href="/logout">logout</a>)
+			{% else %}
+			<a class="login-link" href="/login">login</a>
+			<a class="login-link" href="/signup">signup</a>
+			{% endif %}	
+		</div>
+	</body>
+	
+
+</html>

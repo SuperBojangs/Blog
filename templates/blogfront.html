@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Brandon's Blog</title>
+		<link type="text/css" rel="stylesheet" href="/static/main.css" />
+	</head>
+	
+		
+		<header>
+    	<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c47.47.587.587/s160x160/46282_10151223956375115_799274160_n.jpg">
+    	<h1> Brandon's Blog!</h1>
+    	<ul>
+      	<li><a href="/blog">Blog</a></li>
+      	<li><a href="http://brandonrot13.appspot.com">ROT 13 Translator</a></li>
+      	<li><a href="http://woven-scene-398.appspot.com">AsiiChan! (Ascii Art)</a></li>
+    	</ul>
+  		</header>
+  		<body>
+
+	<div class="login-area">
+		{% if username %}
+		{{username}} (<a class="login-link" href="/logout">logout</a>)
+		<hr>
+		<a class="login-link" href='/newpost'>New Post</a>
+		{% else %}
+		<a class="login-link" href="/login">login </a>
+		<a class="login-link" href="/signup">signup</a>
+		{% endif %}	
+	</div>
+	</body>
+	<!--<hr>-->
+	{% for blog in blogs %}
+		<div class='blog'>
+			
+			<div class='post-title'>{{blog.title}}</div>
+			<div class='post-date'>{{blog.created}}</div>
+			<hr>
+			<div>
+			<pre class="post-content">{{blog.content}}</pre>
+			</div>
+			<br>
+		</div>
+		{% endfor %}
+
+</html>

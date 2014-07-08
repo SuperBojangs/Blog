@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Brandon's Blog</title>
+		<link type="text/css" rel="stylesheet" href="/static/main.css" />
+	</head>
+	<body>
+		<h1>Brandon's Blog!</h1>
+		<p>Blog Posts</p>
+		
+	</body>
+	<hr>
+	{% for blog in blogs %}
+		<div class='blog'>
+			<div class='blog-title'>{{blog.title}}</div>
+			<pre class="blog-body">{{blog.content}}
+		</div>
+		{% endfor %}
+
+</html>

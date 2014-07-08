@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Brandon's Blog</title>
+		<link type="text/css" rel="stylesheet" href="/static/main.css" />
+	</head>
+	<body>
+
+		<h1 class='main-title'>Brandon's Blog</h1>
+		
+	
+		<div class = 'blog'>
+			<div class="post-title">{{s.title}}</div>
+			<div class="post-date">{{s.created}}</div>
+			<hr>
+			
+			<!--<pre class="post-content">{{s.content}}>-->
+			<pre class="post-content">{{s.content}}</pre>
+
+			<div>
+			<p><a class='return-link' href='/blog'>Back to Blog</p>
+			</div>
+			
+		</div>
+
+		<div class="login-area">
+			{% if username %}
+			{{user.name}} (<a class="login-link" href="/logout">logout</a>)
+			{% else %}
+			<a class="login-link" href="/login">login</a>
+			<a class="login-link" href="/signup">signup</a>
+			{% endif %}	
+		</div>
+
+		
+	
+	
+	
+	</body>	
+</html>
